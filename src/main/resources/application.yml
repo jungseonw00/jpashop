@@ -16,5 +16,7 @@ spring:
 
 logging:
   level:
-    org.hibernate.SQL: debug # logger\uB97C \uC774\uC6A9\uD574 \uCD9C\uB825
+    # logger\uB97C \uC774\uC6A9\uD574 \uCD9C\uB825
+    org.hibernate.SQL: debug
+    # SQL\uC758 \uD30C\uB77C\uBBF8\uD130\uB97C \uCD9C\uB825
     org.hibernate.type: trace
