@@ -10,10 +10,11 @@ import java.util.ArrayList;
 import java.util.List;
 import jpabook.jpashop.domain.order.Order;
 import lombok.Getter;
+import lombok.Setter;
 import org.springframework.boot.autoconfigure.amqp.RabbitConnectionDetails.Address;
 
 @Entity
-@Getter
+@Getter @Setter
 public class Member {
     @Id @GeneratedValue
     @Column(name = "member_id")

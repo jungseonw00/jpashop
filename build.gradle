@@ -29,9 +29,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	// SQL의 파라미터 로그를 출력함
-//	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.1'
-
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.1'
 
 	compileOnly 'org.projectlombok:lombok'
 	testCompileOnly 'org.projectlombok:lombok'
