@@ -1,4 +1,4 @@
-package jpabook.jpashop.domain.item;
+package jpabook.jpashop.domain.item.extend;
 
 import static jakarta.persistence.InheritanceType.SINGLE_TABLE;
 
@@ -11,6 +11,7 @@ import jakarta.persistence.Inheritance;
 import jakarta.persistence.ManyToMany;
 import java.util.ArrayList;
 import java.util.List;
+import jpabook.jpashop.domain.item.Category;
 import jpabook.jpashop.exception.NotEnoughStockException;
 import lombok.Getter;
 import lombok.Setter;

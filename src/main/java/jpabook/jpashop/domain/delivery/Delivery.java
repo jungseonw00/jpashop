@@ -3,6 +3,7 @@ package jpabook.jpashop.domain.delivery;
 import static jakarta.persistence.EnumType.STRING;
 import static jakarta.persistence.FetchType.LAZY;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
@@ -10,7 +11,7 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToOne;
-import jpabook.jpashop.domain.item.extend.Address;
+import jpabook.jpashop.domain.item.Address;
 import jpabook.jpashop.domain.order.Order;
 import lombok.Getter;
 import lombok.Setter;
@@ -23,6 +24,7 @@ public class Delivery {
     @Column(name = "delivery_id")
     private Long id;
 
+    @JsonIgnore
     @OneToOne(mappedBy = "delivery", fetch = LAZY)
     private Order order;
 

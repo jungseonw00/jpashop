@@ -5,7 +5,7 @@ import static jpabook.jpashop.domain.order.OrderItem.createOrderItem;
 
 import jpabook.jpashop.domain.Member;
 import jpabook.jpashop.domain.delivery.Delivery;
-import jpabook.jpashop.domain.item.Item;
+import jpabook.jpashop.domain.item.extend.Item;
 import jpabook.jpashop.domain.order.Order;
 import jpabook.jpashop.domain.order.OrderItem;
 import jpabook.jpashop.repository.ItemRepository;

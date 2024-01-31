@@ -7,8 +7,8 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import jakarta.persistence.EntityManager;
 import jpabook.jpashop.domain.Member;
-import jpabook.jpashop.domain.item.Item;
-import jpabook.jpashop.domain.item.extend.Address;
+import jpabook.jpashop.domain.item.extend.Item;
+import jpabook.jpashop.domain.item.Address;
 import jpabook.jpashop.domain.item.extend.Book;
 import jpabook.jpashop.domain.order.Order;
 import jpabook.jpashop.exception.NotEnoughStockException;

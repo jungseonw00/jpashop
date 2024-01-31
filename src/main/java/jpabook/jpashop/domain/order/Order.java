@@ -7,6 +7,7 @@ import static java.time.LocalDateTime.now;
 import static jpabook.jpashop.domain.delivery.DeliveryStatus.COMP;
 import static jpabook.jpashop.domain.order.OrderStatus.CANCEL;
 import static jpabook.jpashop.domain.order.OrderStatus.ORDER;
+import static lombok.AccessLevel.PROTECTED;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -24,11 +25,13 @@ import java.util.List;
 import jpabook.jpashop.domain.Member;
 import jpabook.jpashop.domain.delivery.Delivery;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
 @Table(name = "orders")
 @Getter @Setter
+@NoArgsConstructor(access = PROTECTED)
 public class Order {
     @Id @GeneratedValue
     @Column(name = "order_id")

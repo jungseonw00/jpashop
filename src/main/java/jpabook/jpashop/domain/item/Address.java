@@ -1,12 +1,11 @@
-package jpabook.jpashop.domain.item.extend;
+package jpabook.jpashop.domain.item;
 
 import jakarta.persistence.Embeddable;
-import jpabook.jpashop.domain.item.Item;
 import lombok.Getter;
 
 @Embeddable
 @Getter
-public class Address extends Item {
+public class Address {
     private String city;
     private String street;
     private String zipcode;

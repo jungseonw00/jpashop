@@ -13,6 +13,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import java.util.ArrayList;
 import java.util.List;
+import jpabook.jpashop.domain.item.extend.Item;
 import lombok.Getter;
 import lombok.Setter;
 
